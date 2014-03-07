@@ -40,7 +40,7 @@ public class PlayPanel extends JPanel {
 
 	// 右边图片panel
 	private JPanel rightPanel = new JPanel();
-	private ImageIcon currentIcon = new ImageIcon("hang1.jpg");
+	private ImageIcon currentIcon = new ImageIcon("img/hang1.jpg");
 	private JLabel currentPicture = new JLabel(currentIcon,
 			SwingConstants.CENTER);
 	// buttons包含两个按钮
