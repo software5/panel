@@ -2,18 +2,17 @@ package panel;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
-import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 @SuppressWarnings("serial")
 public class InceptionPanel extends JPanel {
 
-	private JButton start = new JButton("新建游戏");
-	private JButton resume = new JButton("继续游戏");
-	private JButton rank = new JButton("游戏排行");
-	private JButton setting = new JButton("游戏设置");
-	private JButton exit = new JButton("退出游戏");
+	private JLabel start = new JLabel(new ImageIcon("img/start.png"));
+	private JLabel resume = new JLabel(new ImageIcon("img/resume.png"));
+	private JLabel rank = new JLabel(new ImageIcon("img/rank.png"));
+	private JLabel setting = new JLabel(new ImageIcon("img/set.png"));
+	private JLabel exit = new JLabel(new ImageIcon("img/out.png"));
 	private JLabel background = new JLabel();
 	private Icon picture = new ImageIcon("yellowHang.jpg");
 
@@ -42,43 +41,43 @@ public class InceptionPanel extends JPanel {
 
 	}
 
-	public JButton getStart() {
+	public JLabel getStart() {
 		return start;
 	}
 
-	public void setStart(JButton start) {
+	public void setStart(JLabel start) {
 		this.start = start;
 	}
 
-	public JButton getResume() {
+	public JLabel getResume() {
 		return resume;
 	}
 
-	public void setResume(JButton resume) {
+	public void setResume(JLabel resume) {
 		this.resume = resume;
 	}
 
-	public JButton getRank() {
+	public JLabel getRank() {
 		return rank;
 	}
 
-	public void setRank(JButton rank) {
+	public void setRank(JLabel rank) {
 		this.rank = rank;
 	}
 
-	public JButton getSetting() {
+	public JLabel getSetting() {
 		return setting;
 	}
 
-	public void setSetting(JButton setting) {
+	public void setSetting(JLabel setting) {
 		this.setting = setting;
 	}
 
-	public JButton getExit() {
+	public JLabel getExit() {
 		return exit;
 	}
 
-	public void setExit(JButton exit) {
+	public void setExit(JLabel exit) {
 		this.exit = exit;
 	}
 }
